@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yasmin Amani | Academic Portfolio</title>
+<style>
+:root {
+  --navy: #142b49;
+  --blue: #477da8;
+  --light: #edf4fa;
+  --white: #ffffff;
+  --text: #26384b;
+  --muted: #6d7d8e;
+}
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: var(--text);
+  line-height: 1.7;
+}
+header {
+  background: rgba(255,255,255,.97);
+  padding: 17px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px #142b4910;
+}
+.logo { color: var(--navy); font-weight: bold; font-size: 20px; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+}
+nav a:hover { color: var(--blue); }
+section { padding: 85px 10%; scroll-margin-top: 65px; }
+.hero {
+  background: linear-gradient(130deg,#142b49,#315d83);
+  color: white;
+  min-height: 490px;
+  display: flex;
+  align-items: center;
+}
+.hero h1 { font-size: clamp(38px,6vw,65px); margin: 12px 0; }
+.hero p { max-width: 650px; color: #dce8f2; }
+.tag { color: #a9d5f5; letter-spacing: 3px; font-size: 12px; }
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: var(--navy);
+  padding: 12px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+h2 { color: var(--navy); font-size: 32px; margin-bottom: 10px; }
+.subtitle { color: var(--muted); margin-bottom: 35px; }
+.alt { background: var(--light); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border: 1px solid #e2eaf1;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #142b4908;
+}
+.card h3 { color: var(--navy); margin-top: 0; }
+.number { color: var(--blue); font-size: 13px; font-weight: bold; }
+.timeline { border-left: 3px solid #9bbbd5; padding-left: 25px; }
+.timeline .card { margin-bottom: 20px; }
+.skills span {
+  display: inline-block;
+  background: #e6f0f8;
+  color: #315d83;
+  border-radius: 20px;
+  padding: 7px 14px;
+  margin: 5px;
+  font-size: 13px;
+}
+footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 30px 10%;
+}
+footer p { color: #d1dce7; font-size: 13px; }
+footer a { color: #a9d5f5; }
+@media(max-width:700px) {
+  header { padding: 15px 5%; flex-direction: column; gap: 12px; }
+  nav { justify-content: center; gap: 12px; }
+  section { padding: 65px 7%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">YA.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#journey">Journey</a>
+    <a href="#work">Work</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#summary">Summary</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<!-- 1. HOME AND PROFESSIONAL PROFILE -->
+<section class="hero" id="home">
+  <div>
+    <div class="tag">ACADEMIC PORTFOLIO | 2026</div>
+    <h1>Hello, I'm<br>Yasmin Amani.</h1>
+    <h3>Computer Science (Data Engineering)</h3>
+    <p>
+      Welcome to my academic portfolio for Data Engineering
+      Ecosystem. This website documents my learning journey,
+      academic achievements, selected work, and reflections
+      throughout the course.
+    </p>
+    <a href="#journey" class="btn">Explore My Portfolio →</a>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Profile</h2>
+  <p class="subtitle">Getting to know me and my academic interests.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>About Me</h3>
+      <p>
+        My name is Yasmin Amani, and I am a Computer Science
+        student specialising in Data Engineering. I am
+        interested in developing my knowledge of data
+        technologies and understanding how data is collected,
+        processed, managed, and transformed into useful insights.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Academic Background</h3>
+      <p><b>Programme:</b><br>Computer Science (Data Engineering)</p>
+      <p><b>Subject:</b><br>Data Engineering Ecosystem</p>
+      <p><b>Academic Year:</b><br>2026</p>
+    </div>
+    <div class="card">
+      <h3>Professional Interests</h3>
+      <p>
+        Data management, database systems, data processing,
+        data analytics, and emerging technologies in the
+        data engineering field.
+      </p>
+    </div>
+  </div>
+  <h3>My Skills and Interests</h3>
+  <div class="skills">
+    <span>Problem Solving</span>
+    <span>Critical Thinking</span>
+    <span>Database Management</span>
+    <span>Data Processing</span>
+    <span>Teamwork</span>
+    <span>Communication</span>
+  </div>
+</section>
+
+<!-- 2. LEARNING JOURNEY -->
+<section class="alt" id="journey">
+  <h2>My Learning Journey</h2>
+  <p class="subtitle">
+    My academic development and progress in Data Engineering Ecosystem.
+  </p>
+  <div class="timeline">
+    <div class="card">
+      <div class="number">STAGE 01</div>
+      <h3>Introduction to Data Engineering</h3>
+      <p>
+        [Describe what you learned about data engineering
+        and its importance.]
+      </p>
+    </div>
+    <div class="card">
+      <div class="number">STAGE 02</div>
+      <h3>Understanding the Data Ecosystem</h3>
+      <p>
+        [Explain the technologies, tools, and components
+        of the data engineering ecosystem you studied.]
+      </p>
+    </div>
+    <div class="card">
+      <div class="number">STAGE 03</div>
+      <h3>Practical Learning and Application</h3>
+      <p>
+        [Describe practical exercises, assignments,
+        activities, and technical skills you developed.]
+      </p>
+    </div>
+    <div class="card">
+      <div class="number">STAGE 04</div>
+      <h3>Personal Development</h3>
+      <p>
+        [Explain your progress, challenges, and improvements
+        throughout the learning process.]
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SELECTED WORK AND EVIDENCE -->
+<section id="work">
+  <h2>Selected Work and Evidence</h2>
+  <p class="subtitle">
+    A collection of my academic work, activities, and learning evidence.
+  </p>
+  <div class="grid">
+    <div class="card">
+      <div class="number">ARTIFACT 01</div>
+      <h3>[Assignment Title]</h3>
+      <p>[Briefly explain this assignment and its purpose.]</p>
+      <p><b>Evidence:</b> Add your assignment PDF or screenshot.</p>
+      <a href="#" target="_blank">View Evidence →</a>
+    </div>
+    <div class="card">
+      <div class="number">ARTIFACT 02</div>
+      <h3>[Project Title]</h3>
+      <p>[Describe your project and what you accomplished.]</p>
+      <p><b>Evidence:</b> Add your project file or screenshot.</p>
+      <a href="#" target="_blank">View Evidence →</a>
+    </div>
+    <div class="card">
+      <div class="number">ARTIFACT 03</div>
+      <h3>[Practical Activity]</h3>
+      <p>[Explain the practical activity and skills demonstrated.]</p>
+      <p><b>Evidence:</b> Add your practical work or certificate.</p>
+      <a href="#" target="_blank">View Evidence →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. REFLECTION ON ARTIFACTS -->
+<section class="alt" id="reflection">
+  <h2>Reflection on Artifacts</h2>
+  <p class="subtitle">
+    Evaluating my learning experiences through my academic work.
+  </p>
+  <div class="card">
+    <h3>Reflection 01 – [Artifact Name]</h3>
+    <p><b>What I learned:</b> [Describe the knowledge gained.]</p>
+    <p><b>Challenges:</b> [Explain the difficulties you faced.]</p>
+    <p><b>Improvements:</b> [Explain how you overcame the challenges.]</p>
+    <p><b>Future application:</b> [Describe how you can apply this knowledge.]</p>
+  </div>
+  <br>
+  <div class="card">
+    <h3>Reflection 02 – [Artifact Name]</h3>
+    <p><b>What I learned:</b> [Add your reflection.]</p>
+    <p><b>Challenges:</b> [Add your challenges.]</p>
+    <p><b>Improvements:</b> [Add your improvements.]</p>
+    <p><b>Future application:</b> [Add your future application.]</p>
+  </div>
+</section>
+
+<!-- 5. COURSE LEARNING SUMMARY -->
+<section id="summary">
+  <h2>Course Learning Summary</h2>
+  <p class="subtitle">
+    My overall understanding and knowledge gained from this subject.
+  </p>
+  <div class="card">
+    <h3>Overall Learning Experience</h3>
+    <p>
+      Through Data Engineering Ecosystem, I aim to develop
+      an understanding of how different technologies and
+      processes work together to support data management
+      and data-driven applications.
+    </p>
+    <h3>Key Learning Outcomes</h3>
+    <ul>
+      <li>[Learning outcome 1]</li>
+      <li>[Learning outcome 2]</li>
+      <li>[Learning outcome 3]</li>
+      <li>[Learning outcome 4]</li>
+    </ul>
+    <h3>My Future Goals</h3>
+    <p>
+      I hope to continue improving my technical knowledge,
+      strengthen my problem-solving abilities, and gain
+      practical experience in the field of data engineering.
+    </p>
+  </div>
+</section>
+
+<!-- 6. SOURCES AND ACKNOWLEDGEMENTS -->
+<section class="alt" id="sources">
+  <h2>Sources and Acknowledgements</h2>
+  <p class="subtitle">
+    References and appreciation for the resources and guidance
+    that supported my learning.
+  </p>
+  <div class="card">
+    <h3>References</h3>
+    <ol>
+      <li>[Add your textbook or course materials.]</li>
+      <li>[Add websites and articles used.]</li>
+      <li>[Add other academic references.]</li>
+    </ol>
+    <h3>Acknowledgements</h3>
+    <p>
+      I would like to express my appreciation to my lecturer,
+      classmates, and everyone who supported and guided me
+      throughout my learning journey in Data Engineering Ecosystem.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <h3>Yasmin Amani</h3>
+  <p>Computer Science (Data Engineering)</p>
+  <p>Data Engineering Ecosystem | Academic Portfolio 2026</p>
+  <p>© 2026 Yasmin Amani. All rights reserved.</p>
+  <a href="#home">Back to Top ↑</a>
+</footer>
+
+</body>
+</html>
